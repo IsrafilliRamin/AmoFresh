@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400..800&family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  padding: 0 200px;
+  box-shadow: 0px 2px 15px rgb(208, 208, 208);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 104px;
+}
+header nav #logo {
+  width: 95px;
+  height: auto;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+header nav a div {
+  font-size: 20px;
+}
+header nav ul {
+  width: 572px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 24px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header nav .contact-us {
+  border: 2px solid black;
+  width: 169px;
+  height: 41px;
+  border-radius: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=styles.css.map */
