@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400..800&family=League+Spartan:wght@100..900&display=swap");
-
+$green:#198B44;
+$dropdowncolor:#EBFDE9;
+$dropdownhover:#C9FFC3;
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+/* @@@@@@@@@@@@@@@@@@@@ Header css @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 header {
     box-shadow: 0px 2px 15px -8px rgb(168, 168, 168);
 
@@ -20,6 +22,7 @@ header {
         justify-content: space-between;
         align-items: center;
         height: 104px;
+        
         #logo {
             width: 95px;
             height: auto;
@@ -35,15 +38,89 @@ header {
             width: 572px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             list-style: none;
             font-size: 24px;
+            height: 40px;
+            #companies {
+                position: relative;
+               
+              display: flex;
+              height: 40px;
+              align-items: center;
+                &:hover{
+                    .dropdown{
+                        display: flex;
+                    }
+                }
+                .dropdown{  
+                 
+                  position: absolute;
+                  top: 40px;
+                    transition: .2s all;
+                    background-color: #EBFDE9;
+                    width: 206px;
+                    height: 127px;
+                    border-radius: 26px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 0px;
+                    padding: 20px;
+                    display: none;
+                    a{
+                     
+                        padding: 5px  10px;
+
+                        &:hover{
+                            cursor: pointer;
+                          
+                                background-color: #C9FFC3;
+                                border-radius: 8px;
+                               
+                          
+                            i{
+                                visibility: visible;
+                                font-size: 14px;
+                            }
+                        }
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 18px;
+                        i{
+                          
+                            visibility: hidden;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                &:hover {
+                  + .dropdown {
+                    display: block;
+                  }
+                }
+              }
             li {
+                position: relative;
+               
+                .green{
+                    height: 7px;
+                    width: 7px;
+                    border-radius: 100%;
+                    background-color: $green;
+                    position: absolute;
+                    left: 50%;
+                    top: 100%;
+                    transform: translate(-50%,70%);
+                }
                 a {
                     text-decoration: none;
                     color: black;
                 }
             }
         }
+        
         .contact-us {
             border: 2px solid black;
             width: 169px;
@@ -55,7 +132,7 @@ header {
         }
     }
 }
-
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Main css @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 main {
     margin: 60px auto;
     width: 1216px;
@@ -108,5 +185,16 @@ main {
                 }
             }
         }
+    }
+}
+
+
+
+@media(max-width:1216px){
+    header nav {
+        width: fit-content;
+    }
+    header nav ul{
+
     }
 }

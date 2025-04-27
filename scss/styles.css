@@ -9,6 +9,7 @@
   font-style: normal;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@ Header css @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 header {
   box-shadow: 0px 2px 15px -8px rgb(168, 168, 168);
 }
@@ -35,8 +36,70 @@ header nav ul {
   width: 572px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   font-size: 24px;
+  height: 40px;
+}
+header nav ul #companies {
+  position: relative;
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+header nav ul #companies:hover .dropdown {
+  display: flex;
+}
+header nav ul #companies .dropdown {
+  position: absolute;
+  top: 40px;
+  transition: 0.2s all;
+  background-color: #EBFDE9;
+  width: 206px;
+  height: 127px;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0px;
+  padding: 20px;
+  display: none;
+}
+header nav ul #companies .dropdown a {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+header nav ul #companies .dropdown a:hover {
+  cursor: pointer;
+  background-color: #C9FFC3;
+  border-radius: 8px;
+}
+header nav ul #companies .dropdown a:hover i {
+  visibility: visible;
+  font-size: 14px;
+}
+header nav ul #companies .dropdown a i {
+  visibility: hidden;
+  margin-right: 10px;
+}
+header nav ul #companies:hover + .dropdown {
+  display: block;
+}
+header nav ul li {
+  position: relative;
+}
+header nav ul li .green {
+  height: 7px;
+  width: 7px;
+  border-radius: 100%;
+  background-color: #198B44;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 70%);
 }
 header nav ul li a {
   text-decoration: none;
@@ -52,6 +115,7 @@ header nav .contact-us {
   justify-content: center;
 }
 
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Main css @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 main {
   margin: 60px auto;
   width: 1216px;
@@ -99,4 +163,11 @@ main .main-section .main-section-content2 .content2-right a {
 main .main-section .main-section-content2 .content2-right a img {
   width: 384px;
   height: auto;
+}
+
+@media (max-width: 1216px) {
+  header nav {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }/*# sourceMappingURL=styles.css.map */
