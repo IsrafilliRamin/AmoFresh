@@ -28,7 +28,7 @@ header {
             gap: 5px;
             align-items: end;
             cursor: pointer;
-            /*  display: none; */
+             display: none;
 
             &:hover {
                 .long-green {
@@ -166,7 +166,7 @@ header {
             position: absolute;
             height: 100vh;
             width: 50%;
-            left: 0;
+            left: -100%;
             top: 0;
             display: flex;
             flex-direction: column;
@@ -174,7 +174,7 @@ header {
             padding: 30px;
             gap: 15px;
             align-items: start;
-
+            transition: 1s all;
             li {
                 &:hover {
                    > a {
@@ -218,16 +218,16 @@ header {
             #companies-mobile {
                 font-size: 20px;
 
-                &:hover{
+                /* &:hover{
                     .dropdown{
                         height: auto;
                         opacity: 1;
                         pointer-events: all;
                     }
-                }
+                } */
                 .dropdown{
-                    height: 0;
-                    opacity: 0;
+                  /*   height: 0;
+                    opacity: 0; */
                     pointer-events: none;
                     a{
                         &:hover{

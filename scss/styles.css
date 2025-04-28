@@ -27,7 +27,7 @@ header nav .burger-menu {
   gap: 5px;
   align-items: end;
   cursor: pointer;
-  /*  display: none; */
+  display: none;
 }
 header nav .burger-menu:hover .long-green {
   display: inline-block;
@@ -151,7 +151,7 @@ header nav .nav-links-mobile {
   position: absolute;
   height: 100vh;
   width: 50%;
-  left: 0;
+  left: -100%;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -159,6 +159,7 @@ header nav .nav-links-mobile {
   padding: 30px;
   gap: 15px;
   align-items: start;
+  transition: 1s all;
 }
 header nav .nav-links-mobile li:hover > a {
   background-color: #c9ffc3;
@@ -194,15 +195,17 @@ header nav .nav-links-mobile .dropdown a div {
 }
 header nav .nav-links-mobile #companies-mobile {
   font-size: 20px;
-}
-header nav .nav-links-mobile #companies-mobile:hover .dropdown {
-  height: auto;
-  opacity: 1;
-  pointer-events: all;
+  /* &:hover{
+      .dropdown{
+          height: auto;
+          opacity: 1;
+          pointer-events: all;
+      }
+  } */
 }
 header nav .nav-links-mobile #companies-mobile .dropdown {
-  height: 0;
-  opacity: 0;
+  /*   height: 0;
+    opacity: 0; */
   pointer-events: none;
 }
 header nav .nav-links-mobile #companies-mobile .dropdown a:hover {
