@@ -150,7 +150,8 @@ header nav .nav-links-mobile {
   background-color: #ebfde9;
   position: absolute;
   height: 100vh;
-  width: 50%;
+  width: 30%;
+  min-width: 200px;
   left: -100%;
   top: 0;
   display: flex;
@@ -185,9 +186,14 @@ header nav .nav-links-mobile .dropdown {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  pointer-events: all;
 }
 header nav .nav-links-mobile .dropdown a {
   margin-top: 5px;
+  pointer-events: all;
+}
+header nav .nav-links-mobile .dropdown a:hover {
+  pointer-events: all;
 }
 header nav .nav-links-mobile .dropdown a div {
   font-size: 12px;
@@ -195,6 +201,7 @@ header nav .nav-links-mobile .dropdown a div {
 }
 header nav .nav-links-mobile #companies-mobile {
   font-size: 20px;
+  cursor: pointer;
   /* &:hover{
       .dropdown{
           height: auto;

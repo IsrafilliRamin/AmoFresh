@@ -7,7 +7,6 @@ dropdown.style.color = "red"
 
 const companiesMobile = document.querySelector("#companies-mobile-drop")
 .addEventListener("click", () => {
-    console.log(dropdown);
         if (dropdown.style.height === "0px") {
             dropdown.style.height = "auto"
             dropdown.style.opacity = 1
