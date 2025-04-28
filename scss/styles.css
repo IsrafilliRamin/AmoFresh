@@ -21,6 +21,38 @@ header nav {
   align-items: center;
   height: 104px;
 }
+header nav .burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: end;
+  cursor: pointer;
+  /*  display: none; */
+}
+header nav .burger-menu:hover .long-green {
+  display: inline-block;
+  height: 3px;
+  width: 30px;
+  background-color: #10b14e;
+}
+header nav .burger-menu:hover .shot-green {
+  display: inline-block;
+  height: 3px;
+  width: 20px;
+  background-color: #10b14e;
+}
+header nav .burger-menu .long-green {
+  display: inline-block;
+  height: 3px;
+  width: 30px;
+  background-color: #198b44;
+}
+header nav .burger-menu .shot-green {
+  display: inline-block;
+  height: 3px;
+  width: 20px;
+  background-color: #198b44;
+}
 header nav #logo {
   width: 95px;
   height: auto;
@@ -54,7 +86,7 @@ header nav ul #companies .dropdown {
   position: absolute;
   top: 40px;
   transition: 0.2s all;
-  background-color: #EBFDE9;
+  background-color: #ebfde9;
   width: 206px;
   height: 127px;
   border-radius: 26px;
@@ -74,7 +106,7 @@ header nav ul #companies .dropdown a {
 }
 header nav ul #companies .dropdown a:hover {
   cursor: pointer;
-  background-color: #C9FFC3;
+  background-color: #c9ffc3;
   border-radius: 8px;
 }
 header nav ul #companies .dropdown a:hover i {
@@ -95,7 +127,7 @@ header nav ul li .green {
   height: 7px;
   width: 7px;
   border-radius: 100%;
-  background-color: #198B44;
+  background-color: #198b44;
   position: absolute;
   left: 50%;
   top: 100%;
@@ -113,6 +145,88 @@ header nav .contact-us {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+header nav .nav-links-mobile {
+  background-color: #ebfde9;
+  position: absolute;
+  height: 100vh;
+  width: 50%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 30px;
+  gap: 15px;
+  align-items: start;
+}
+header nav .nav-links-mobile li:hover > a {
+  background-color: #c9ffc3;
+  border-radius: 8px;
+}
+header nav .nav-links-mobile li:hover i {
+  display: block;
+}
+header nav .nav-links-mobile li a {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  padding: 5px 15px;
+  justify-content: space-between;
+}
+header nav .nav-links-mobile li a i {
+  transition: 0.3s all;
+  font-size: 13px;
+  font-weight: 600;
+  display: none;
+}
+header nav .nav-links-mobile .dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+header nav .nav-links-mobile .dropdown a {
+  margin-top: 5px;
+}
+header nav .nav-links-mobile .dropdown a div {
+  font-size: 12px;
+  color: #198b44;
+}
+header nav .nav-links-mobile #companies-mobile {
+  font-size: 20px;
+}
+header nav .nav-links-mobile #companies-mobile:hover .dropdown {
+  height: auto;
+  opacity: 1;
+  pointer-events: all;
+}
+header nav .nav-links-mobile #companies-mobile .dropdown {
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+header nav .nav-links-mobile #companies-mobile .dropdown a:hover {
+  background-color: #c9ffc3;
+  border-radius: 8px;
+}
+header nav .nav-links-mobile #companies-mobile #companies-mobile-drop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  width: 150px;
+}
+header nav .nav-links-mobile #companies-mobile #companies-mobile-drop:hover {
+  background-color: #c9ffc3;
+  border-radius: 8px;
+}
+header nav .nav-links-mobile #companies-mobile #companies-mobile-drop:hover i {
+  display: flex;
+}
+header nav .nav-links-mobile #companies-mobile #companies-mobile-drop i {
+  font-size: 13px;
+  font-weight: 600;
+  display: none;
 }
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Main css @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -167,7 +281,16 @@ main .main-section .main-section-content2 .content2-right a img {
 
 @media (max-width: 1216px) {
   header nav {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
+    padding: 0px 20px;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav > a {
+    display: none;
+  }
+  header nav .burger-menu {
+    display: flex;
   }
 }/*# sourceMappingURL=styles.css.map */
