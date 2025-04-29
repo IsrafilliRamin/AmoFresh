@@ -29,7 +29,7 @@ header {
             gap: 5px;
             align-items: end;
             cursor: pointer;
-             display: none;
+            display: none;
 
             &:hover {
                 .long-green {
@@ -79,7 +79,7 @@ header {
             height: 40px;
             #companies {
                 position: relative;
-               
+
                 display: flex;
                 height: 40px;
                 align-items: center;
@@ -179,7 +179,7 @@ header {
             transition: 1s all;
             li {
                 &:hover {
-                   > a {
+                    > a {
                         background-color: $dropdownhover;
                         border-radius: 8px;
                     }
@@ -210,10 +210,9 @@ header {
                 pointer-events: all;
                 a {
                     margin-top: 5px;
-                  
+
                     pointer-events: all;
-                    &:hover{
-                       
+                    &:hover {
                         pointer-events: all;
                     }
                     div {
@@ -233,18 +232,17 @@ header {
                         pointer-events: all;
                     }
                 } */
-                .dropdown{
-                  /*   height: 0;
+                .dropdown {
+                    /*   height: 0;
                     opacity: 0; */
                     pointer-events: none;
-                    a{
-                        &:hover{
+                    a {
+                        &:hover {
                             background-color: $dropdownhover;
                             border-radius: 8px;
                         }
                     }
                 }
-                
 
                 #companies-mobile-drop {
                     display: flex;
@@ -252,15 +250,14 @@ header {
                     justify-content: space-between;
                     padding: 5px 15px;
                     width: 150px;
-                    &:hover{
+                    &:hover {
                         background-color: $dropdownhover;
                         border-radius: 8px;
-                        i{
+                        i {
                             display: flex;
                         }
-                     
                     }
-                    i{
+                    i {
                         font-size: 13px;
                         font-weight: 600;
                         display: none;
@@ -276,6 +273,9 @@ main {
     width: 1216px;
 
     .main-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         .main-section-content {
             line-height: 80px;
             h1 {
@@ -286,12 +286,21 @@ main {
                     font-size: 75px;
                     font-weight: 700;
                 }
+                div {
+                    display: flex;
+                    align-items: center;
+                }
                 #img-btn {
                     width: 304px;
                     height: auto;
                 }
             }
             h2 {
+                span {
+                    font-size: 70px;
+                    font-weight: 700;
+                    text-align: center;
+                }
                 font-size: 70px;
                 font-weight: 700;
                 text-align: center;
@@ -303,6 +312,7 @@ main {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
             .content2-left {
                 #main-img {
                     width: 721px;
@@ -339,5 +349,67 @@ main {
     }
     header nav .burger-menu {
         display: flex;
+    }
+    main {
+        width: 100%;
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 1159px) {
+    main .main-section .main-section-content  {
+        line-height: 30px;
+    }
+
+    main .main-section .main-section-content .main-title {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: clamp(32px, 6vw, 75px);
+        gap: 0.5rem;
+    }
+    main .main-section .main-section-content .main-title .main-title-text1 {
+        order: 1;
+        flex-grow: 1;
+        flex-basis: 48%;
+        font-size: 6vw;
+        display: flex;
+        justify-content: end;
+    }
+    main .main-section .main-section-content .main-title div {
+        order: 0;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    main .main-section .main-section-content h2 {
+        font-size: 6vw;
+    }
+    main .main-section .main-section-content h2 span {
+       display: none;
+    }
+    main .main-section .main-section-content .main-title .main-title-text2 {
+        order: 1;
+        flex-grow: 1;
+        flex-basis: 48%;
+        font-size: 6vw;
+        display: flex;
+        justify-content: start;
+    }
+    main .main-section .main-section-content2 {
+        justify-content: center;
+        gap: 30px;
+    }
+    main .main-section .main-section-content2 .content2-left #main-img {
+        width: 100%;
+        max-width: 721px;
+        height: auto;
+    }
+    main .main-section .main-section-content2 .content2-right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
