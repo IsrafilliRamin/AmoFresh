@@ -105,7 +105,8 @@ footer .container-footer {
   margin: 0px auto;
   width: 1216px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: end;
 }
 footer .container-footer .container-footer-top {
   width: 100%;
@@ -138,6 +139,10 @@ footer .container-footer .container-footer-top .container-footer-sec1 div {
 footer .container-footer .container-footer-top .container-footer-sec1 div span {
   color: #616161;
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 2px;
 }
 footer .container-footer .container-footer-top .container-footer-sec1 div .circle-green {
   background-color: #198b44;
@@ -198,6 +203,14 @@ footer .container-footer .container-footer-top .container-footer-sec4 .sosial-ic
 footer .container-footer .container-footer-top .container-footer-sec4 .sosial-icons a img {
   height: auto;
   width: 32px;
+}
+footer .container-footer .container-footer-bottom {
+  margin-top: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  color: #616161;
+  font-size: 20px;
 }
 
 @media (max-width: 760px) {
