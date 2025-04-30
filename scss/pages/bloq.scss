@@ -1,6 +1,10 @@
 $lightgreen: #ebfde9;
 $boxtextcolor: #616161;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 main {
     #blog-intro {
         display: flex;
