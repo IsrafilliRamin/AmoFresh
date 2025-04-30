@@ -1,37 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- Main SEO Title -->
-        <title>About us | Amofresh</title>
-      
-        <!-- SEO Meta Description -->
-        <meta name="description" content="Amofresh haqqında daha çox məlumat əldə edin. Təbii və orqanik meyvə və tərəvəzlərlə sağlam qidalanmanı təşviq edən layihə.">
-      
-        <!-- SEO Keywords -->
-        <meta name="keywords" content="Amofresh, Haqqımızda, orqanik məhsullar, təbii qidalar,  təzə meyvələr, sağlam həyat">
-      
-        <!-- Website Authors -->
-        <meta name="author" content="Ramin and Malik">
-      
-        <!-- Open Graph Meta Tags for Social Media -->
-        <meta property="og:title" content="Haqqımızda | Amofresh">
-        <meta property="og:description" content="Amofresh haqqında daha çox məlumat əldə edin. Təqdim etdiyimiz keyfiyyətli məhsullarla sağlam həyat yaşayın.">
-        <meta property="og:image" content="https://yourdomain.com/images/og-about.jpg">
-        <meta property="og:url" content="https://yourdomain.com/pages/about.html">
-        <meta property="og:type" content="website">
-      
-        <!-- Favikon -->
-        <link rel="icon" href="/images/iconAmo.png" type="image/x-icon">
-      
-        <!--  CSS -->
-        <link rel="stylesheet" href="./scss/styles.css">
-        <script defer src="./js/main.js"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+      <!-- Main SEO Title -->
+      <title>Amofresh</title>
+  
+      <!-- SEO Meta Description -->
+      <meta name="description"
+          content="Amofresh - Təbii və orqanik meyvə, tərəvəz məhsulları. Keyfiyyətli məhsullarla sağlam qidalanın.">
+  
+      <!-- SEO Keywords -->
+      <meta name="keywords"
+          content="Amofresh, orqanik meyvələr, orqanik tərəvəzlər, təbii məhsullar, sağlam qidalanma, təzə meyvələr, təzə tərəvəzlər">
+  
+      <!-- Website Authors -->
+      <meta name="author" content="Ramin and Malik">
+  
+      <!-- Open Graph Meta Tags for Social Media -->
+      <meta property="og:title" content="Amofresh">
+      <meta property="og:description" content="Təzə və orqanik meyvə, tərəvəz məhsulları. Amofresh ilə sağlam həyat!">
+      <meta property="og:image" content="https://israfilliramin.github.io/AmoFresh/images/iconAmo.png">
+      <meta property="og:url" content="https://israfilliramin.github.io/AmoFresh">
+      <meta property="og:type" content="website">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Favikon -->
+      <link rel="icon" href="images/iconAmo.png" type="image/x-icon">
+  
+      <!--  CSS -->
+      <link rel="stylesheet" href="../scss/styles.css">
+      <link rel="stylesheet" href="../scss/pages/about.css">
+      <script defer src="../js/main.js"></script>
       </head>
       
 <body>
     
+<!-- Header -->
+<header>
+  <nav>
+      <div class="logo">
+          <a href="/index.html">
+              <img src="../images/iconAmo.png" alt="Amo Fresh Logo" id="logo">
+          </a>
+      </div>
+      <ul class="nav-links">
+          <li><a  href="/index.html">Home</a>
+             
+          </li>
+          <li><a style="font-weight: bold;" href="./about.html">About us</a>
+            <div class="green"></div></li>
+          <li id="companies"><div>Companies</div>
+              <div class="dropdown">
+                  <a href="#">
+                      <div>AMOGROW</div> <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                  <a href="#">
+                      <div>AMOTRADE</div> <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                  <a href="#">
+                      <div>AMODO</div> <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+              </div>
+          </li>
+          <li><a href="./blog.html">Bloq</a></li>
+      </ul>
+
+      <ul class="nav-links-mobile">
+          <li>
+              <a href="/index.html">
+                  <div>Home</div>
+                  <i class="fa-solid fa-chevron-right"></i>
+              </a>
+          </li>
+
+          <li>
+              <a href="./about.html">
+                  <div>About us</div>
+                  <i class="fa-solid fa-chevron-right"></i>
+              </a>
+          </li>
+
+          <li id="companies-mobile">
+              <div id="companies-mobile-drop">
+                  <div>Companies</div>
+                  <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="dropdown">
+                  <a href="#">
+                      <div>AmoGrow</div>
+                  </a>
+                  <a href="#">
+                      <div>AmoTrade</div>
+                  </a>
+                  <a href="#">
+                      <div>AmoDo</div>
+                  </a>
+              </div>
+          </li>
+
+          <li>
+              <a href="./blog.html">
+                  <div>Bloq</div>
+                  <i class="fa-solid fa-chevron-right"></i>
+              </a>
+          </li>
+
+          <li>
+              <a href="./contact.html">
+                  <div>Contact us</div>
+                  <i class="fa-solid fa-chevron-right"></i>
+              </a>
+          </li>
+      </ul>
+
+      <a href="./contact.html">
+          <div class="contact-us">
+              Contact us
+          </div>
+      </a>
+      <div class="burger-menu">
+          <span class="shot-green"></span>
+          <span class="long-green"></span>
+          <span class="shot-green"></span>
+      </div>
+  </nav>
+</header>
+
+
+
+
+
+
+
+ <!-- Footer -->
+ <footer>
+  <div class="container-footer">
+      <div class="container-footer-top">
+          <div class="container-footer-sec1">
+             <img class="footer-logo" src="../images/iconAmo.png" alt="logo">
+             <p>Amodo is the dedicated 
+              fresh, high-quality.</p>
+              <div>
+                  <div class="circle-green"></div>
+                  <span>+99450 500 50 50</span>
+              </div>
+          </div>
+          <div class="container-footer-sec2">
+              <h5>Company Profile</h5>
+              <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <span>Company Profile</span>
+              </div>
+              <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <span>Company Profile</span>
+              </div>
+              <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <span>Company Profile</span>
+              </div>
+              <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <span>Company Profile</span>
+              </div>
+              <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <span>Company Profile</span>
+              </div>
+          </div>
+          <div class="container-footer-sec3">
+              <h5>Quick Links</h5>
+              <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <span>Amodo</span>
+              </div>
+              <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <span>AmoGrow</span>
+              </div>
+              <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <span>AmoTrade</span>
+              </div>
+          </div>
+          <div class="container-footer-sec4">
+              <h5>Follow us</h5>
+              <div class="sosial-icons">
+                  <a href="#">
+                      <img src="../images/blog/fb.png" alt="">
+                  </a>
+                  <a href="#">
+                      <img src="../images/blog/link.png" alt="">
+                  </a>
+                  <a href="#">
+                      <img src="../images/blog/insta.png" alt="">
+                  </a>
+              </div>
+          </div>
+      </div>
+
+
+
+      <div class="container-footer-bottom">
+          <span>Terms And Condition I Privacy Policy</span>
+          <span>2024 Amofresh Company</span>
+      </div>
+
+  </div>
+</footer>
+
+
+
 </body>
 </html>
