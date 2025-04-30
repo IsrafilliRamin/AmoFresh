@@ -79,6 +79,23 @@ main #blog-list .bloq-list-box .blog-list-text-box p {
   font-size: 24px;
   font-weight: 300;
 }
+main #more {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #more button {
+  width: 160px;
+  height: 40px;
+  border-radius: 243px;
+  background-color: #198b44;
+  color: white;
+  border: none;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
 
 @media (max-width: 760px) {
   main #blog-intro > div img {

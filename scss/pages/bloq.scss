@@ -1,6 +1,7 @@
 $lightgreen: #ebfde9;
 $boxtextcolor: #616161;
-*{
+$greencol: #198b44;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -76,12 +77,29 @@ main {
                     font-size: 32px;
                     font-weight: 600;
                 }
-                p{
+                p {
                     color: $boxtextcolor;
                     font-size: 24px;
                     font-weight: 300;
                 }
             }
+        }
+    }
+    #more {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            width: 160px;
+            height: 40px;
+            border-radius: 243px;
+            background-color: $greencol;
+            color: white;
+            border: none;
+            font-size: 24px;
+            font-weight: 400;
+            cursor: pointer;
         }
     }
 }
@@ -105,6 +123,4 @@ main {
     main #blog-list {
         justify-content: center;
     }
-    
-    
 }
