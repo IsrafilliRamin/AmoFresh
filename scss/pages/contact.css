@@ -566,6 +566,9 @@ footer .container-footer .container-footer-bottom {
   main #contact-mail .email-box input {
     width: 100%;
   }
+  main #contact-mail .email-box button {
+    width: 200px;
+  }
 }
 @media (max-width: 650px) {
   footer .container-footer {
