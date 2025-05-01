@@ -391,11 +391,14 @@ main {
        }
        .email-box{
       
-        width: 40vw;
+        width:100%;
         border-radius: 70px;
         position: relative;
         background-color: white;
         display: flex;
+        justify-content: space-between;
+        max-width: 40vw;
+        
         input{
             padding: 20px 30px;
             border-radius: 70px;
@@ -403,7 +406,7 @@ main {
             color: #616161;
             border: none;
             outline: none;
-            width: 30vw;
+            width: 100%;
             height: 100%;
             
         }
@@ -609,12 +612,14 @@ footer {
 
     main #contact-mail {
         padding: 20px;
+        height: 365px;
     }
 
     main #contact-mail .email-box {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        max-width: fit-content;
     }
     main #contact-mail .email-box input {
         width: 100%;
@@ -640,5 +645,8 @@ footer {
     footer .container-footer .container-footer-bottom {
         flex-wrap: wrap;
         gap: 10px;
+    }
+    main #contact-mail .email-box input {
+        padding: 12px 30px;
     }
 }
