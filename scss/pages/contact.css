@@ -132,7 +132,7 @@ header nav ul li a {
   color: black;
 }
 header nav .contact-us {
-  border: 2px solid #198b44;
+  border: 2px solid #198b44 !important;
   width: 169px;
   height: 41px;
   border-radius: 43px;
