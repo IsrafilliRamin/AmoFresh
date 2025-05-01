@@ -164,7 +164,7 @@ header {
 
         .nav-links-mobile {
             background-color: $dropdowncolor;
-            position: absolute;
+            position: fixed;
             height: 100vh;
             width: 30%;
             min-width: 200px;
@@ -177,6 +177,7 @@ header {
             gap: 15px;
             align-items: start;
             transition: 1s all;
+            z-index: 100;
             li {
                 &:hover {
                     > a {
