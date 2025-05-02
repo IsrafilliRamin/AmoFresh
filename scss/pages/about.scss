@@ -1,11 +1,132 @@
 $lightgreen: #ebfde9;
 $boxtextcolor: #616161;
 $greencol: #198b44;
+$orange:#F37522;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+main {
+    #about-intro {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .history {
+            margin: 60px 0px 40px 0px;
+        }
+       
+        h2 {
+            font-weight: 500;
+            font-size: 64px;
+        }
+        > div {
+            display: flex;
+            align-items: end;
+            img {
+                height: auto;
+                width: 72px;
+            }
+            p {
+                color: #616161;
+                font-size: 20px;
+                font-weight: 400;
+
+                text-align: center;
+            }
+        }
+        .history-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            width: 100%;
+            margin: 40px 0px;
+            div {
+                width: 384px;
+                height: 134px;
+                border-radius: 24px;
+                background-color: $greencol;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 32px;
+                font-weight: 500;
+                color: #ebfde9;
+                text-align: center;
+            }
+        }
+        .history-circle-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            margin: 50px 0px;
+            .history-circle-box1{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                gap: 50px;
+
+                div{
+                    background-color: $orange;
+                    width: 442.18px;
+                    height: 143.41px;
+                    border-radius: 46px;
+                    text-align: center;
+                    color: #ebfde9;
+                    font-size: 35px;
+                    padding: 40px 50px;
+                    position: relative;
+
+                    &:nth-child(2){
+                        position: absolute;
+                        top: 94%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                }
+            }
+        }
+
+    }
+    #about-amo-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 40px 0px;
+        row-gap: 30px;
+        .amo-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            div {
+                background-color: $greencol;
+                width: 384px;
+                height: 84.45px;
+                border-radius: 243px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ebfde9;
+                font-size: 50px;
+            }
+            span {
+                font-size: 24px;
+                color: $boxtextcolor;
+                font-weight: 400;
+            }
+        }
+    }
 }
 
 footer {
