@@ -375,6 +375,49 @@ footer .container-footer .container-footer-bottom {
     margin: 20px 0px;
   }
   main #about-intro .history-circle-container .history-circle-box1 div {
-    padding: 35px 30px;
+    padding: 42px 30px;
+    font-size: 25px;
+  }
+  main #about-amo-box .amo-box {
+    width: 100%;
+  }
+  main #about-amo-box .amo-box div {
+    width: 100%;
+    font-size: 38px;
+  }
+  main #about-intro .history {
+    margin: 40px 0px 40px 0px;
+  }
+  main #about-intro .history-box div {
+    padding: 20px;
+    font-size: 25px;
+  }
+  main #about-intro {
+    gap: 0px;
+  }
+  main #about-intro .history-circle-container .history-circle-box1:nth-child(1) div:nth-child(1) {
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+  main #about-intro .history-circle-container .history-circle-box1:nth-child(1) div:nth-child(2) {
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+  main #about-intro .history-circle-container .history-circle-box1:nth-child(1) div:nth-child(3) {
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+  main #about-intro .history-circle-container {
+    gap: 18px;
+    margin: 10px 0px;
   }
 }/*# sourceMappingURL=about.css.map */
