@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -344,6 +345,128 @@ main #contact-mail .email-box button {
   font-size: 26px;
   cursor: pointer;
 }
+main #main-amo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin: 50px 0;
+}
+main #main-amo .video-conta {
+  height: 590px;
+  border-radius: 32px;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-width: 100%;
+}
+main #main-amo .video-conta iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 32px;
+}
+main #main-amo .amo-conta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+main #main-amo .amo-conta .box {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  height: 250px;
+  border-radius: 32px;
+  background-color: #ebfde9;
+}
+main #main-amo .amo-conta .box span {
+  font-size: 64px;
+  font-weight: 500;
+}
+main #main-amo .amo-conta .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #616161;
+}
+main #main-amo .amo-conta .box p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #616161;
+}
+main #main-amo .amo-conta .box-green {
+  background-color: #198b44;
+  color: white;
+}
+main #main-amo .amo-conta .box-green h4 {
+  color: white;
+}
+main #main-amo .amo-conta .box-green p {
+  color: white;
+}
+main #main-amo h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 64px;
+  font-weight: 500;
+  text-align: center;
+}
+main #main-amo .tree-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main #main-amo .tree-box .tree-img {
+  height: auto;
+  width: 482px;
+}
+main #main-amo .tree-box .tree-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #main-amo .tree-box .tree-text {
+  height: auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+main #main-amo .tree-box .tree-text .advvan-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main #main-amo .tree-box .tree-text .advvan-box span {
+  position: relative;
+  padding-left: 40px;
+  line-height: 1.5;
+}
+main #main-amo .tree-box .tree-text .advvan-box span::before {
+  content: "•";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #000;
+}
+main #main-amo .tree-box .tree-text h4 {
+  font-weight: 500;
+  font-size: 64px;
+}
+main #main-amo .tree-box .tree-text p {
+  font-size: 24px;
+  color: #616161;
+}
 
 footer {
   background-color: #ebfde9;
@@ -495,6 +618,11 @@ footer .container-footer .container-footer-bottom {
     font-size: 20px;
     color: #616161;
   }
+  main #main-amo .tree-box {
+    justify-content: center;
+    row-gap: 71px;
+    text-align: justify;
+  }
 }
 @media (max-width: 800px) {
   main {
@@ -597,5 +725,23 @@ footer .container-footer .container-footer-bottom {
   }
   main #amodo-amo-box {
     width: 100%;
+  }
+  main #main-amo .video-conta {
+    height: auto;
+  }
+  main #main-amo .amo-conta {
+    justify-content: center;
+  }
+  main #main-amo .amo-conta .box {
+    width: 100%;
+  }
+  main #main-amo .tree-box .tree-text h4 {
+    font-size: 32px;
+  }
+  main #main-amo h3 {
+    font-size: 32px;
+  }
+  main #main-amo .tree-box .tree-text p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=amo.css.map */

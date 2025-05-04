@@ -550,7 +550,7 @@ footer .container-footer .container-footer-bottom {
   }
   main #amogrow-map .tree-box .tree-text h4 {
     font-weight: 500;
-    font-size: 35px;
+    font-size: 32px;
   }
   main #amogrow-map .tree-box {
     margin-bottom: 47px;
@@ -580,5 +580,28 @@ footer .container-footer .container-footer-bottom {
   }
   main #amogrow-amo-box {
     width: 100%;
+  }
+  main #amogrow-map .tree-box .tree-text p {
+    font-size: 20px;
+    color: #616161;
+  }
+  main #amogrow-map .tree-box .tree-text {
+    text-align: justify;
+    margin-top: 0px;
+  }
+  main #amogrow-map .tree-box .tree-text {
+    height: 422px;
+  }
+  main {
+    width: 100%;
+    padding: 0px 20px;
+    margin: 60px 0px 0px 0px !important;
+  }
+  main #amogrow-map .product-box h4 {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  main #amogrow-map .tree-box .tree-text {
+    gap: 40px;
   }
 }/*# sourceMappingURL=amogrow.css.map */
