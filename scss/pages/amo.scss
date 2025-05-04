@@ -268,11 +268,12 @@ header {
 }
 
 main {
-    #contact-intro {
+    #amodo-intro {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 50px;
 
         h2 {
             font-weight: 500;
@@ -296,65 +297,38 @@ main {
         }
     }
 
-    #contact-map {
-        margin: 50px 0px;
-        background-color: $dropdowncolor;
-        border-radius: 32px;
+    #amodo-amo-box {
         display: flex;
-
-        .map {
-            iframe {
-                border-radius: 32px;
-            }
-        }
-        .text {
-            padding: 40px;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 40px 0px;
+        row-gap: 30px;
+        .amo-box {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            font-size: 24px;
-            .text-center {
+            align-items: center;
+            gap: 15px;
+           
+            div {
+                background-color: $greencol;
+                width: 290px;
+                height: 64.93px;
+                border-radius: 243px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ebfde9;
+                font-size: 50px;
+            }
+            span {
+                font-size: 24px;
+                color: $boxtextcolor;
+                font-weight: 400;
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
-            }
-            h3 {
-                font-size: 63px;
-                color: $green;
-                margin-bottom: 10px;
-            }
-            .text-botton {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                .text-bottom-up {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-                    span {
-                        font-weight: 500;
-                    }
-                }
-            }
-            .text-bottom-down{
-                display: flex;
-                gap: 25px;
-                flex-direction: column;
-                .box-cicrle{
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    div{
-                        width: 40px;
-                        height: 40px;
-                        border: 1px solid black;
-                        border-radius: 100%;
-                        &:nth-child(2){
-                            background-color: $green;
-                        }
-                    }
-                    
-                }
+                align-items: center;
+               gap: 7px;
             }
         }
     }
@@ -591,20 +565,21 @@ footer {
         aspect-ratio: 4 / 3;
         border: 0;
     }
-    main #contact-intro > div img {
+    main #amodo-intro > div img {
         display: none;
     }
-    main #contact-intro {
+    main #amodo-intro {
         gap: 25px;
         padding: 0px 0px;
     }
-    main #contact-intro > div p {
+    main #amodo-intro > div p {
         width: 100%;
         font-size: 14px;
         line-height: 17px;
     }
-    main #contact-intro h2 {
+    main #amodo-intro h2 {
         font-size: 32px;
+        text-align: center;
     }
 
     main #contact-mail h5 {
@@ -628,7 +603,10 @@ footer {
     main #contact-mail .email-box button {
         width: 200px;
     }
-   
+    main #amogrow-intro h2 {
+        font-size: 32px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 650px) {
@@ -671,5 +649,15 @@ footer {
     main #contact-mail {
         padding: 20px;
         height: 300px;
+    }
+    main #amodo-amo-box .amo-box {
+        width: 100%;
+    }
+    main #amodo-amo-box .amo-box div {
+        width: 100%;
+        font-size: 38px;
+    }
+    main #amodo-amo-box {
+        width: 100%;
     }
 }

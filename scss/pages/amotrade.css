@@ -234,148 +234,64 @@ header nav .nav-links-mobile #companies-mobile #companies-mobile-drop i {
   display: none;
 }
 
-main #contact-intro {
+main #amotrade-intro {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-main #contact-intro h2 {
+main #amotrade-intro h2 {
   font-weight: 500;
   font-size: 64px;
 }
-main #contact-intro > div {
+main #amotrade-intro > div {
   display: flex;
   align-items: end;
 }
-main #contact-intro > div img {
+main #amotrade-intro > div img {
   height: auto;
   width: 72px;
 }
-main #contact-intro > div p {
+main #amotrade-intro > div p {
   color: #616161;
   font-size: 20px;
   font-weight: 400;
   width: 650px;
   text-align: center;
 }
-main #contact-map {
-  margin: 50px 0px;
-  background-color: #ebfde9;
-  border-radius: 32px;
+main #amotrade-amo-box {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0px;
+  row-gap: 30px;
 }
-main #contact-map .map iframe {
-  border-radius: 32px;
-}
-main #contact-map .text {
-  padding: 40px;
+main #amotrade-amo-box .amo-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+main #amotrade-amo-box .amo-box div {
+  background-color: #198b44;
+  width: 290px;
+  height: 64.93px;
+  border-radius: 243px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ebfde9;
+  font-size: 50px;
+}
+main #amotrade-amo-box .amo-box span {
   font-size: 24px;
-}
-main #contact-map .text .text-center {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-main #contact-map .text h3 {
-  font-size: 63px;
-  color: #198b44;
-  margin-bottom: 10px;
-}
-main #contact-map .text .text-botton {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-main #contact-map .text .text-botton .text-bottom-up {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-main #contact-map .text .text-botton .text-bottom-up span {
-  font-weight: 500;
-}
-main #contact-map .text .text-bottom-down {
-  display: flex;
-  gap: 25px;
-  flex-direction: column;
-}
-main #contact-map .text .text-bottom-down .box-cicrle {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-main #contact-map .text .text-bottom-down .box-cicrle div {
-  width: 40px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 100%;
-}
-main #contact-map .text .text-bottom-down .box-cicrle div:nth-child(2) {
-  background-color: #198b44;
-}
-main #contact-mail {
-  position: relative;
-  border-radius: 32px;
+  color: #616161;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  background-color: #ebfde9;
-  gap: 15px;
-  height: 445px;
-  text-align: center;
-  padding: 15px 100px;
-}
-main #contact-mail .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-main #contact-mail h4 {
-  font-size: 27px;
-  font-weight: 500;
-}
-main #contact-mail h5 {
-  font-size: clamp(24px, 8vw, 77px);
-  font-weight: 500;
-}
-main #contact-mail p {
-  font-size: 25px;
-  color: #616161;
-}
-main #contact-mail .email-box {
-  width: 100%;
-  border-radius: 70px;
-  position: relative;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  max-width: 40vw;
-}
-main #contact-mail .email-box input {
-  padding: 20px 30px;
-  border-radius: 70px;
-  font-size: 30px;
-  color: #616161;
-  border: none;
-  outline: none;
-  width: 100%;
-  height: 100%;
-}
-main #contact-mail .email-box button {
-  border-radius: 70px;
-  background-color: #198b44;
-  color: white;
-  border: none;
-  width: 150px;
-  font-size: 26px;
-  cursor: pointer;
+  gap: 7px;
 }
 
 footer {
@@ -540,20 +456,21 @@ footer .container-footer .container-footer-bottom {
     aspect-ratio: 4/3;
     border: 0;
   }
-  main #contact-intro > div img {
+  main #amotrade-intro > div img {
     display: none;
   }
   main #contact-intro {
     gap: 25px;
     padding: 0px 0px;
   }
-  main #contact-intro > div p {
+  main #amotrade-intro > div p {
     width: 100%;
     font-size: 14px;
     line-height: 17px;
   }
-  main #contact-intro h2 {
+  main #amotrade-intro h2 {
     font-size: 32px;
+    text-align: center;
   }
   main #contact-mail h5 {
     font-size: clamp(24px, 5vw, 77px);
@@ -574,6 +491,9 @@ footer .container-footer .container-footer-bottom {
   }
   main #contact-mail .email-box button {
     width: 200px;
+  }
+  main #amotrade-intro {
+    gap: 20px;
   }
 }
 @media (max-width: 650px) {
@@ -615,5 +535,15 @@ footer .container-footer .container-footer-bottom {
   main #contact-mail {
     padding: 20px;
     height: 300px;
+  }
+  main #amotrade-amo-box .amo-box {
+    width: 100%;
+  }
+  main #amotrade-amo-box .amo-box div {
+    width: 100%;
+    font-size: 38px;
+  }
+  main #amotrade-amo-box {
+    width: 100%;
   }
 }/*# sourceMappingURL=amotrade.css.map */
