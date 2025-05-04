@@ -131,16 +131,6 @@ header nav ul li a {
   text-decoration: none;
   color: black;
 }
-header nav .contact-us {
-  border: 2px solid #198b44 !important;
-  width: 169px;
-  height: 41px;
-  border-radius: 43px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #10b14e;
-}
 header nav .nav-links-mobile {
   background-color: #ebfde9;
   position: absolute;
