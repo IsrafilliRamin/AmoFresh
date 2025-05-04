@@ -467,6 +467,41 @@ main #main-amo .tree-box .tree-text p {
   font-size: 24px;
   color: #616161;
 }
+main #main-amo .delivery-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+}
+main #main-amo .delivery-box .box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main #main-amo .delivery-box .box .delivery-img {
+  width: 72px;
+  height: 72px;
+}
+main #main-amo .delivery-box .box .delivery-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #main-amo .delivery-box .box .text-box {
+  display: flex;
+  flex-direction: column;
+}
+main #main-amo .delivery-box .box .text-box h4 {
+  font-size: 32px;
+  font-weight: 500;
+}
+main #main-amo .delivery-box .box .text-box p {
+  font-size: 20px;
+  color: #616161;
+}
 
 footer {
   background-color: #ebfde9;
@@ -743,5 +778,11 @@ footer .container-footer .container-footer-bottom {
   }
   main #main-amo .tree-box .tree-text p {
     font-size: 20px;
+  }
+  main #main-amo .delivery-box {
+    justify-content: space-between;
+  }
+  main #main-amo .tree-box .tree-img {
+    width: 100%;
   }
 }/*# sourceMappingURL=amo.css.map */
