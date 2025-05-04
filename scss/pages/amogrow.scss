@@ -150,8 +150,6 @@ header {
             }
         }
 
-        
-
         .nav-links-mobile {
             background-color: $dropdowncolor;
             position: absolute;
@@ -285,12 +283,10 @@ main {
                 text-align: center;
             }
         }
-
-      
     }
     #amogrow-amo-box {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         margin: 40px 0px;
@@ -315,15 +311,95 @@ main {
                 font-size: 24px;
                 color: $boxtextcolor;
                 font-weight: 400;
-               
             }
         }
     }
-   
+
+    #amogrow-map {
+        margin: 80px 0px;
+
+        .product-box {
+            h4 {
+                text-align: center;
+                margin-bottom: 70px;
+                font-size: 64px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+        .map-box {
+            height: 800px;
+            margin-bottom: 100px;
+            img {
+                font-size: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .tree-box {
+            margin-bottom: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            .tree-img {
+                height: 600px;
+                width: 482px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .tree-text {
+                height: 500px;
+                width: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 25px;
+                .advvan-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                .advvan-box span {
+                    position: relative;
+                    padding-left: 40px;
+                    line-height: 1.5;
+                }
+
+                .advvan-box span::before {
+                    content: "•";
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 18px;
+                    color: #000;
+                }
+                h4 {
+                    font-weight: 500;
+                    font-size: 64px;
+                }
+                p {
+                    font-size: 24px;
+                    color: $boxtextcolor;
+                }
+            }
+        }
+
+        .product-img-box{
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
 }
-
-
-
 
 footer {
     background-color: $lightgreen;
@@ -458,20 +534,30 @@ footer {
         padding: 20px 0px;
         height: fit-content;
     }
-    
-    main{
+
+    main {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-   
+    main #amogrow-map .tree-box {
+        justify-content: center;
+        gap: 20px;
+    }
+    main #amogrow-map .map-box {
+        margin-bottom: 0px;
+    }
+    main #amogrow-map .map-box {
+        height: fit-content;
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 800px) {
-    main{
-        margin: 0px  20px;
+    main {
+        margin: 0px 20px;
     }
-    
+
     main #amogrow-intro > div img {
         display: none;
     }
@@ -488,8 +574,32 @@ footer {
         font-size: 32px;
         text-align: center;
     }
-
-   
+    main #amogrow-map .tree-box .tree-img {
+        height: 500px;
+        width: 100%;
+    }
+    main #amogrow-map .tree-box .tree-text {
+        text-align: justify;
+        margin-top: 30px;
+        height: 500px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+    main #amogrow-map .product-box h4 {
+        text-align: center;
+        margin-bottom: 70px;
+        font-size: 32px;
+    }
+    main #amogrow-map .tree-box .tree-text h4 {
+        font-weight: 500;
+        font-size: 35px;
+    }
+    main #amogrow-map .tree-box {
+        margin-bottom: 47px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -518,5 +628,4 @@ footer {
     main #amogrow-amo-box {
         width: 100%;
     }
-   
 }
