@@ -294,8 +294,39 @@ main {
                 text-align: center;
             }
         }
-    }
 
+      
+    }
+    #amogrow-amo-box {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 40px 0px;
+        row-gap: 30px;
+        .amo-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            div {
+                background-color: $greencol;
+                width: 290px;
+                height: 64.93px;
+                border-radius: 243px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ebfde9;
+                font-size: 50px;
+            }
+            span {
+                font-size: 24px;
+                color: $boxtextcolor;
+                font-weight: 400;
+            }
+        }
+    }
    
 }
 
@@ -463,12 +494,9 @@ footer {
     }
     main #amogrow-intro h2 {
         font-size: 32px;
+        text-align: center;
     }
 
-   
-
-  200px;
-    }
    
 }
 
@@ -488,6 +516,15 @@ footer {
         flex-wrap: wrap;
         gap: 0px;
     }
-   
+    main #amogrow-amo-box .amo-box {
+        width: 100%;
+    }
+    main #amogrow-amo-box .amo-box div {
+        width: 100%;
+        font-size: 38px;
+    }
+    main #amogrow-amo-box {
+        width: 100%;
+    }
    
 }
