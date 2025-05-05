@@ -543,27 +543,25 @@ main {
                 }
             }
         }
-       
     }
 
-    #slider{
+    #slider {
         margin: 40px 0px;
         width: 100%;
 
-
         .slider-box {
-            .slider-text{
+            .slider-text {
                 margin-bottom: 40px;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 20px;
-                h5{
+                h5 {
                     font-size: 64px;
                     font-weight: 500;
                 }
-                p{
+                p {
                     font-size: 20px;
                     font-weight: 400;
                     color: $boxtextcolor;
@@ -571,11 +569,10 @@ main {
                     text-align: center;
                 }
             }
-            .swiper-pagination{
-              position: relative;
-             top: 2px;
+            .swiper-pagination {
+                position: relative;
+                top: 2px;
             }
-           
 
             .swiper-slide {
                 text-align: center;
@@ -584,9 +581,8 @@ main {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-             
 
-                img{
+                img {
                     height: 100px;
                     width: 150px;
                     object-fit: contain;
@@ -595,8 +591,6 @@ main {
                     justify-content: center;
                 }
             }
-
-          
         }
     }
 }
@@ -896,5 +890,19 @@ footer {
     }
     main #slider .slider-box .slider-text p {
         font-size: 17px;
+    }
+    main #amodo-intro {
+        margin-bottom: 0px;
+    }
+    main #slider .slider-box .swiper-slide img {
+        width: 100%;
+    }
+
+    main #slider .slider-box .swiper-pagination {
+        position: relative;
+        top: 6px;
+    }
+    main{
+        margin-bottom: 0px !important;
     }
 }

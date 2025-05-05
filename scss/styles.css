@@ -425,4 +425,7 @@ main .main-section .main-section-content2 .content2-right a img {
     display: flex;
     justify-content: start;
   }
+  main {
+    margin: 45px auto;
+  }
 }/*# sourceMappingURL=styles.css.map */

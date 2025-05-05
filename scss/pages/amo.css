@@ -838,4 +838,17 @@ footer .container-footer .container-footer-bottom {
   main #slider .slider-box .slider-text p {
     font-size: 17px;
   }
+  main #amodo-intro {
+    margin-bottom: 0px;
+  }
+  main #slider .slider-box .swiper-slide img {
+    width: 100%;
+  }
+  main #slider .slider-box .swiper-pagination {
+    position: relative;
+    top: 6px;
+  }
+  main {
+    margin-bottom: 0px !important;
+  }
 }/*# sourceMappingURL=amo.css.map */
