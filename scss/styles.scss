@@ -75,6 +75,21 @@ header {
                 font-size: 20px;
             }
         }
+        .lang-select {
+            display: inline-block;
+            padding: 5px;
+            background-color: #10b14e;
+            border-radius: 6px;
+            select {
+                padding: 6px 10px;
+                font-size: 16px;
+                border: none;
+                background-color: white;
+                border-radius: 4px;
+                outline: none;
+                cursor: pointer;
+              }
+          }
         ul {
             width: 572px;
             display: flex;
@@ -83,21 +98,7 @@ header {
             list-style: none;
             font-size: 24px;
             height: 40px;
-            .lang-select {
-                display: inline-block;
-                padding: 5px;
-                background-color: #10b14e;
-                border-radius: 6px;
-                select {
-                    padding: 6px 10px;
-                    font-size: 16px;
-                    border: none;
-                    background-color: white;
-                    border-radius: 4px;
-                    outline: none;
-                    cursor: pointer;
-                  }
-              }
+         
             #companies {
                 position: relative;
 

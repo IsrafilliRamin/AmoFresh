@@ -70,6 +70,21 @@ header nav a {
 header nav a div {
   font-size: 20px;
 }
+header nav .lang-select {
+  display: inline-block;
+  padding: 5px;
+  background-color: #10b14e;
+  border-radius: 6px;
+}
+header nav .lang-select select {
+  padding: 6px 10px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
 header nav ul {
   width: 572px;
   display: flex;
@@ -78,21 +93,6 @@ header nav ul {
   list-style: none;
   font-size: 24px;
   height: 40px;
-}
-header nav ul .lang-select {
-  display: inline-block;
-  padding: 5px;
-  background-color: #10b14e;
-  border-radius: 6px;
-}
-header nav ul .lang-select select {
-  padding: 6px 10px;
-  font-size: 16px;
-  border: none;
-  background-color: white;
-  border-radius: 4px;
-  outline: none;
-  cursor: pointer;
 }
 header nav ul #companies {
   position: relative;
