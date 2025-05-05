@@ -352,7 +352,7 @@ main {
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 86px;
 
             .delivery-img {
                 height: auto;
@@ -405,8 +405,8 @@ main {
             padding: 2rem;
             text-align: center;
             h2 {
-                font-size: 2rem;
-                margin-bottom: 1.5rem;
+                font-size: 4rem;
+                margin-bottom: 2.5rem;
               }
               .trade-groups {
                 display: flex;
@@ -424,7 +424,7 @@ main {
                         height: 66px;
                         background-color: #4CAF50;
                         color: white;
-                        font-size: 18px;
+                        font-size: 30px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -743,5 +743,12 @@ footer {
         flex-direction: column;
         row-gap: 40px;
         margin: 50px 0;
+    }
+    main #main-amo .delivery-box {
+        gap: 46px;
+    }
+    main #main-amo .trade-container h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
     }
 }

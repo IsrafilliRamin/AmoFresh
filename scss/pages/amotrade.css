@@ -314,7 +314,7 @@ main #main-amo .delivery-box {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 86px;
 }
 main #main-amo .delivery-box .delivery-img {
   height: auto;
@@ -366,8 +366,8 @@ main #main-amo .trade-container {
   text-align: center;
 }
 main #main-amo .trade-container h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
 }
 main #main-amo .trade-container .trade-groups {
   display: flex;
@@ -385,7 +385,7 @@ main #main-amo .trade-container .trade-groups .trade-row span {
   height: 66px;
   background-color: #4CAF50;
   color: white;
-  font-size: 18px;
+  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -689,5 +689,12 @@ footer .container-footer .container-footer-bottom {
     flex-direction: column;
     row-gap: 40px;
     margin: 50px 0;
+  }
+  main #main-amo .delivery-box {
+    gap: 46px;
+  }
+  main #main-amo .trade-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 }/*# sourceMappingURL=amotrade.css.map */
