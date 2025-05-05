@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -283,6 +284,124 @@ main #amotrade-amo-box .amo-box span {
   align-items: center;
   gap: 7px;
 }
+main #main-amo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  margin: 50px 0;
+}
+main #main-amo .video-conta {
+  height: 590px;
+  border-radius: 32px;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-width: 100%;
+}
+main #main-amo .video-conta iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 32px;
+}
+main #main-amo .delivery-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+main #main-amo .delivery-box .delivery-img {
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #main-amo .delivery-box .delivery-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #main-amo .delivery-box .delivery-text {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+main #main-amo .delivery-box .delivery-text .advvan-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main #main-amo .delivery-box .delivery-text .advvan-box span {
+  position: relative;
+  padding-left: 40px;
+  line-height: 1.5;
+}
+main #main-amo .delivery-box .delivery-text .advvan-box span::before {
+  content: "•";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #000;
+}
+main #main-amo .delivery-box .delivery-text h4 {
+  font-weight: 500;
+  font-size: 64px;
+}
+main #main-amo .delivery-box .delivery-text p {
+  font-size: 24px;
+  color: #616161;
+}
+main #main-amo .trade-container {
+  padding: 2rem;
+  text-align: center;
+}
+main #main-amo .trade-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+main #main-amo .trade-container .trade-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main #main-amo .trade-container .trade-groups .trade-row {
+  display: flex;
+  gap: 16px;
+}
+main #main-amo .trade-container .trade-groups .trade-row span {
+  width: 333px;
+  height: 66px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+main #main-amo .trade-container .trade-groups .trade-row.center {
+  justify-content: center;
+}
+main #main-amo .trade-container .trade-groups .trade-row.right {
+  justify-content: flex-end;
+}
+main #main-amo .trade-container .trade-groups .trade-row.left {
+  justify-content: flex-start;
+}
 
 footer {
   background-color: #ebfde9;
@@ -434,6 +553,11 @@ footer .container-footer .container-footer-bottom {
     font-size: 20px;
     color: #616161;
   }
+  main #main-amo .trade-container .trade-groups .trade-row span {
+    width: 23vw;
+    height: 5vw;
+    font-size: 3vw;
+  }
 }
 @media (max-width: 800px) {
   main {
@@ -535,5 +659,35 @@ footer .container-footer .container-footer-bottom {
   }
   main #amotrade-amo-box {
     width: 100%;
+  }
+  main #main-amo .video-conta {
+    height: auto;
+  }
+  main #main-amo .delivery-box .delivery-text p {
+    font-size: 17px;
+    color: #616161;
+  }
+  main #main-amo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin: 0px;
+  }
+  main #main-amo .trade-container .trade-groups .trade-row span {
+    width: 23vw;
+    height: 6vw;
+    font-size: 2.5vw;
+  }
+  main #main-amo .trade-container {
+    padding: 0px;
+    text-align: center;
+  }
+  main #main-amo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin: 50px 0;
   }
 }/*# sourceMappingURL=amotrade.css.map */

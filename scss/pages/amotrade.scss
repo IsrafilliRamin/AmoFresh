@@ -150,8 +150,6 @@ header {
             }
         }
 
-        
-
         .nav-links-mobile {
             background-color: $dropdowncolor;
             position: absolute;
@@ -287,10 +285,9 @@ main {
         }
     }
 
-    
     #amotrade-amo-box {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         margin: 40px 0px;
@@ -300,7 +297,7 @@ main {
             flex-direction: column;
             align-items: center;
             gap: 15px;
-           
+
             div {
                 background-color: $greencol;
                 width: 290px;
@@ -319,15 +316,139 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-               gap: 7px;
+                gap: 7px;
             }
         }
     }
-   
+
+    #main-amo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+        margin: 50px 0;
+
+        .video-conta {
+            height: 590px;
+            border-radius: 32px;
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            max-width: 100%;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+                border-radius: 32px;
+            }
+        }
+
+        .delivery-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            .delivery-img {
+                height: auto;
+                object-fit: contain;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .delivery-text {
+                height: auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 25px;
+                .advvan-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                .advvan-box span {
+                    position: relative;
+                    padding-left: 40px;
+                    line-height: 1.5;
+                }
+
+                .advvan-box span::before {
+                    content: "•";
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 18px;
+                    color: #000;
+                }
+                h4 {
+                    font-weight: 500;
+                    font-size: 64px;
+                }
+                p {
+                    font-size: 24px;
+                    color: $boxtextcolor;
+                }
+            }
+        }
+
+        .trade-container {
+            padding: 2rem;
+            text-align: center;
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+              }
+              .trade-groups {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                max-width: 1200px;
+                margin: 0 auto;
+                .trade-row {
+                    display: flex;
+                    gap: 16px;
+                   
+
+                    span {
+                        width: 333px;
+                        height: 66px;
+                        background-color: #4CAF50;
+                        color: white;
+                        font-size: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 9999px;
+                        white-space: nowrap;
+                        transition: background 0.3s;
+                      }
+                  }
+                  .trade-row.center {
+                    justify-content: center;
+                  }
+                  
+                  .trade-row.right {
+                    justify-content: flex-end;
+                  }
+                  
+                  .trade-row.left {
+                    justify-content: flex-start;
+                  }
+              }
+             
+        }
+    }
 }
-
-
-
 
 footer {
     background-color: $lightgreen;
@@ -465,9 +586,9 @@ footer {
     main #contact-map {
         flex-direction: column;
         align-items: center;
-        width:fit-content ;
+        width: fit-content;
     }
-    main{
+    main {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -479,15 +600,20 @@ footer {
         font-size: 20px;
         color: #616161;
     }
+    main #main-amo .trade-container .trade-groups .trade-row span {
+        width: 23vw;
+        height: 5vw;
+        font-size: 3vw;
+      }
 }
 
 @media (max-width: 800px) {
-    main{
-        margin: 0px  20px;
+    main {
+        margin: 0px 20px;
     }
     main #contact-map .map iframe {
         width: 100%;
-        max-width: 748px; 
+        max-width: 748px;
         height: 500px;
         aspect-ratio: 4 / 3;
         border: 0;
@@ -530,10 +656,10 @@ footer {
     main #contact-mail .email-box button {
         width: 200px;
     }
-    main #amotrade-intro{
+    main #amotrade-intro {
         gap: 20px;
     }
-   
+    
 }
 
 @media (max-width: 650px) {
@@ -556,11 +682,11 @@ footer {
         font-size: 20px;
         gap: 0px;
     }
-    main #contact-map .text .text-center .mail{
-        margin:  18px 0px;
+    main #contact-map .text .text-center .mail {
+        margin: 18px 0px;
     }
     main #contact-map .text .text-botton {
-       font-size: 20px;
+        font-size: 20px;
         gap: 25px;
     }
     main #contact-map .text {
@@ -577,7 +703,7 @@ footer {
         padding: 20px;
         height: 300px;
     }
-    
+
     main #amotrade-amo-box .amo-box {
         width: 100%;
     }
@@ -587,5 +713,35 @@ footer {
     }
     main #amotrade-amo-box {
         width: 100%;
+    }
+    main #main-amo .video-conta {
+        height: auto;
+    }
+    main #main-amo .delivery-box .delivery-text p {
+        font-size: 17px;
+        color: #616161;
+    }
+    main #main-amo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        margin: 0px;
+    }
+    main #main-amo .trade-container .trade-groups .trade-row span {
+        width: 23vw;
+        height: 6vw;
+        font-size: 2.5vw;
+      }
+      main #main-amo .trade-container {
+        padding: 0px;
+        text-align: center;
+    }
+    main #main-amo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        margin: 50px 0;
     }
 }
