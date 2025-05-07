@@ -336,30 +336,29 @@ main {
                     }
                 }
             }
-            .text-bottom-down{
+            .text-bottom-down {
                 display: flex;
                 gap: 25px;
                 flex-direction: column;
-                .box-cicrle{
+                .box-cicrle {
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                    div{
+                    div {
                         width: 40px;
                         height: 40px;
                         border: 1px solid black;
                         border-radius: 100%;
-                        &:nth-child(2){
+                        &:nth-child(2) {
                             background-color: $green;
                         }
                     }
-                    
                 }
             }
         }
     }
 
-    #contact-mail{
+    #contact-mail {
         position: relative;
         border-radius: 32px;
         display: flex;
@@ -371,62 +370,56 @@ main {
         height: 445px;
         text-align: center;
         padding: 15px 100px;
-        .bg{
+        .bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
         }
-        h4{
+        h4 {
             font-size: 27px;
             font-weight: 500;
         }
-        h5{
+        h5 {
             font-size: clamp(24px, 8vw, 77px);
             font-weight: 500;
         }
-       p{
-        font-size: 25px;
-        color: $boxtextcolor;
-       }
-       .email-box{
-      
-        width:100%;
-        border-radius: 70px;
-        position: relative;
-        background-color: white;
-        display: flex;
-        justify-content: space-between;
-        max-width: 40vw;
-        
-        input{
-            padding: 20px 30px;
-            border-radius: 70px;
-            font-size: 30px;
-            color: #616161;
-            border: none;
-            outline: none;
+        p {
+            font-size: 25px;
+            color: $boxtextcolor;
+        }
+        .email-box {
             width: 100%;
-            height: 100%;
-            
-        }
-        button {
             border-radius: 70px;
-            background-color: $green;
-            color: white;
-            border: none;
-            width: 150px;
-            font-size: 26px;
-            cursor: pointer;
-        }
-       }
+            position: relative;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            max-width: 40vw;
 
+            input {
+                padding: 20px 30px;
+                border-radius: 70px;
+                font-size: 30px;
+                color: #616161;
+                border: none;
+                outline: none;
+                width: 100%;
+                height: 100%;
+            }
+            button {
+                border-radius: 70px;
+                background-color: $green;
+                color: white;
+                border: none;
+                width: 221px;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
     }
 }
-
-
-
 
 footer {
     background-color: $lightgreen;
@@ -564,9 +557,9 @@ footer {
     main #contact-map {
         flex-direction: column;
         align-items: center;
-        width:fit-content ;
+        width: fit-content;
     }
-    main{
+    main {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -581,12 +574,12 @@ footer {
 }
 
 @media (max-width: 800px) {
-    main{
-        margin: 0px  20px;
+    main {
+        margin: 0px 20px;
     }
     main #contact-map .map iframe {
         width: 100%;
-        max-width: 748px; 
+        max-width: 748px;
         height: 500px;
         aspect-ratio: 4 / 3;
         border: 0;
@@ -628,7 +621,6 @@ footer {
     main #contact-mail .email-box button {
         width: 200px;
     }
-   
 }
 
 @media (max-width: 650px) {
@@ -651,11 +643,11 @@ footer {
         font-size: 20px;
         gap: 0px;
     }
-    main #contact-map .text .text-center .mail{
-        margin:  18px 0px;
+    main #contact-map .text .text-center .mail {
+        margin: 18px 0px;
     }
     main #contact-map .text .text-botton {
-       font-size: 20px;
+        font-size: 20px;
         gap: 25px;
     }
     main #contact-map .text {

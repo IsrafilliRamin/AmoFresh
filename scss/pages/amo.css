@@ -349,8 +349,8 @@ main #main-amo {
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
-  margin: 50px 0;
+  row-gap: 80px;
+  margin: 80px 0;
 }
 main #main-amo .video-conta {
   height: 590px;
@@ -503,7 +503,7 @@ main #main-amo .delivery-box .box .text-box p {
   color: #616161;
 }
 main #slider {
-  margin: 40px 0px;
+  margin: 70px 0px;
   width: 100%;
 }
 main #slider .slider-box .slider-text {
