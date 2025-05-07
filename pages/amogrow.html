@@ -150,18 +150,32 @@
             <h2 class="amogrow-title">Through Modern Agriculture</h2>
             <div class="amogrow-description">
                 <p>
-                    Amodo is the dedicated logistics branch of AMO Fresh, focused on delivering fresh, high-quality products to customers with precision and care.
+                    Amodo is the dedicated logistics branch of AMO Fresh, focused on delivering fresh, high-quality
+                    products to customers with precision and care.
                 </p>
                 <img src="../images/blog/vevtorright.png" alt="Scroll Indicator" class="scroll-icon">
             </div>
         </section>
 
         <section id="amogrow-map">
-            <div class="map-box">
-                <img src="../images/companies/Group 1832.svg" alt="map">
+            <div class="map-box" style="position: relative;">
+                <img src="../images/companies/Group 1832.svg" alt="map" style="width: 100%;">
+                <button class="toggle-video"></button>
             </div>
+            <span class="close">X</span>
             <div class="open-video">
-                
+         
+                <div class="container-text-video">
+                  <div class="text">
+                    <h4>Nothern region</h4>
+                    <div>Gusar / Khachmaz 500 h</div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                  </div>
+                  <div class="video">
+                    <iframe  src="https://www.youtube.com/embed/UtBDMilukBA?si=3obnFgyHwBuHaF36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </div>
             </div>
             <div class="tree-box">
                 <div class="tree-img">
@@ -169,7 +183,10 @@
                 </div>
                 <div class="tree-text">
                     <h4>WHAT WE GROW?</h4>
-                    <p>Fruit and vegetable farming is a branch of agriculture focused on growing, cultivating, and preparing various types of fruits and vegetables for sale. This type of farming makes a significant contribution to the production of healthy food and the supply of both local and international markets.</p>
+                    <p>Fruit and vegetable farming is a branch of agriculture focused on growing, cultivating, and
+                        preparing various types of fruits and vegetables for sale. This type of farming makes a
+                        significant contribution to the production of healthy food and the supply of both local and
+                        international markets.</p>
                     <b>Advantages:</b>
                     <div class="advvan-box">
                         <span>A natural and healthy food source</span>
@@ -187,7 +204,7 @@
             </div>
 
         </section>
-      
+
 
 
     </main>
@@ -272,6 +289,31 @@
 
         </div>
     </footer>
+
+
+
+
+
+
+    <script>
+        const btn = document.querySelector('.toggle-video');
+        const videoBox = document.querySelector('.open-video');
+        const closex = document.querySelector('.close');
+        const containervideo = document.querySelector('.container-text-video');
+
+        btn.addEventListener('click', () => {
+            videoBox.classList.toggle('active');
+            closex.classList.remove('active');
+            containervideo.style.display = "flex"
+        });
+        closex.addEventListener('click', () => {
+            videoBox.classList.toggle('active');
+            containervideo.style.display = "none";
+            closex.classList.remove('active');
+            
+        });
+    </script>
+
 
 
 </body>
