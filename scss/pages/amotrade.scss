@@ -370,10 +370,16 @@ main {
                 flex-direction: column;
                 justify-content: center;
                 gap: 25px;
+                b{
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: $boxtextcolor;
+                }
                 .advvan-box {
                     display: flex;
                     flex-direction: column;
-                    gap: 10px;
+                    color: $boxtextcolor;
+                    font-size: 24px;
                 }
                 .advvan-box span {
                     position: relative;
@@ -731,7 +737,7 @@ footer {
     main #main-amo .trade-container .trade-groups .trade-row span {
         width: 23vw;
         height: 6vw;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
       }
       main #main-amo .trade-container {
         padding: 0px;
@@ -750,5 +756,8 @@ footer {
     main #main-amo .trade-container h2 {
         font-size: 2rem;
         margin-bottom: 1.5rem;
+    }
+    main #main-amo .delivery-box .delivery-text .advvan-box span {
+        font-size: 17px;
     }
 }
