@@ -324,11 +324,15 @@ main #amogrow-map .tree-box .tree-text {
   flex-direction: column;
   justify-content: center;
   gap: 25px;
+  font-size: 26px;
+  color: #616161;
+}
+main #amogrow-map .tree-box .tree-text b {
+  font-weight: 500;
 }
 main #amogrow-map .tree-box .tree-text .advvan-box {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 main #amogrow-map .tree-box .tree-text .advvan-box span {
   position: relative;
@@ -590,7 +594,8 @@ footer .container-footer .container-footer-bottom {
     margin-top: 0px;
   }
   main #amogrow-map .tree-box .tree-text {
-    height: 422px;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   main {
     width: 100%;
@@ -603,5 +608,8 @@ footer .container-footer .container-footer-bottom {
   }
   main #amogrow-map .tree-box .tree-text {
     gap: 40px;
+  }
+  main #amogrow-map .tree-box .tree-text {
+    font-size: 23px;
   }
 }/*# sourceMappingURL=amogrow.css.map */

@@ -359,10 +359,15 @@ main {
                 flex-direction: column;
                 justify-content: center;
                 gap: 25px;
+                font-size: 26px;
+                color: $boxtextcolor;
+                b{
+                    font-weight: 500;
+                }
                 .advvan-box {
                     display: flex;
                     flex-direction: column;
-                    gap: 10px;
+                   
                 }
                 .advvan-box span {
                     position: relative;
@@ -639,7 +644,7 @@ footer {
         margin-top: 0px;
     }
     main #amogrow-map .tree-box .tree-text {
-        height: 422px;
+        height: fit-content;
     }
     main {
         width: 100%;
@@ -652,5 +657,8 @@ footer {
     }
     main #amogrow-map .tree-box .tree-text {
         gap: 40px;
+    }
+    main #amogrow-map .tree-box .tree-text {
+        font-size: 23px;
     }
 }
