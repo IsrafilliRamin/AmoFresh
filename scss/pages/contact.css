@@ -342,7 +342,7 @@ main #contact-mail h4 {
   font-weight: 500;
 }
 main #contact-mail h5 {
-  font-size: clamp(24px, 8vw, 77px);
+  font-size: clamp(24px, 8vw, 70px);
   font-weight: 500;
 }
 main #contact-mail p {

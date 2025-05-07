@@ -72,9 +72,12 @@ header nav a div {
 }
 header nav .lang-select {
   display: inline-block;
-  padding: 5px;
-  background-color: #10b14e;
+  /*  padding: 5px;
+   background-color: #10b14e; */
   border-radius: 6px;
+  padding: 0px 3px;
+  border-radius: 6px;
+  border: 2px solid #b9b7b7;
 }
 header nav .lang-select select {
   padding: 6px 10px;
