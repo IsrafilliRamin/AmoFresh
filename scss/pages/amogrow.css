@@ -313,6 +313,84 @@ main #amogrow-map .map-box .toggle-video {
   border-radius: 100%;
   cursor: pointer;
 }
+main #amogrow-map .map-box .container {
+  position: absolute;
+  top: 8.2%;
+  right: 39.8%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+main #amogrow-map .map-box .container .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #198b44;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: dotPulse 2s infinite ease-in-out;
+}
+main #amogrow-map .map-box .container .halo {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #198b44;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: haloExpand 2s infinite ease-in-out;
+}
+@keyframes dotPulse {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes haloExpand {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+}
+@keyframes pulseDot {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+  50% {
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+}
 main #amogrow-map .close {
   position: fixed;
   right: 30px;
@@ -707,7 +785,7 @@ footer .container-footer .container-footer-bottom {
     width: 100%;
   }
   main #amogrow-map .tree-box .tree-text p {
-    font-size: 20px;
+    font-size: 17px;
     color: #616161;
   }
   main #amogrow-map .tree-box .tree-text {
@@ -732,5 +810,20 @@ footer .container-footer .container-footer-bottom {
   }
   main #amogrow-map .tree-box .tree-text {
     font-size: 23px;
+  }
+  main #amogrow-map .map-box .toggle-video {
+    position: absolute;
+    top: 10%;
+    right: 28%;
+  }
+  main #amogrow-map .map-box .container {
+    position: absolute;
+    top: 8.2%;
+    right: 20.8%;
+  }
+  main #amogrow-map .tree-box .tree-text .advvan-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
   }
 }/*# sourceMappingURL=amogrow.css.map */
