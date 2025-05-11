@@ -265,4 +265,7 @@ footer .container-footer .container-footer-bottom {
     flex-wrap: wrap;
     gap: 10px;
   }
+  main #blog-list .bloq-list-box {
+    width: 100%;
+  }
 }/*# sourceMappingURL=bloq.css.map */
