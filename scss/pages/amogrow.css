@@ -393,8 +393,8 @@ main #amogrow-map .map-box .container .halo {
 }
 main #amogrow-map .close {
   position: fixed;
-  right: 30px;
-  top: 30px;
+  right: 10px;
+  top: 15px;
   color: white;
   cursor: pointer;
   z-index: 1000;
@@ -757,6 +757,10 @@ footer .container-footer .container-footer-bottom {
   }
   main #amogrow-map .tree-box {
     margin-bottom: 47px;
+  }
+  main #amogrow-map .close {
+    right: 30px;
+    top: 30px;
   }
 }
 @media (max-width: 650px) {
