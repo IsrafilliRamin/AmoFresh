@@ -358,4 +358,7 @@ footer .container-footer .container-footer-bottom {
     font-size: 30px;
     margin-bottom: 18px;
   }
+  main #blog-list .bloq-list-box {
+    width: 100%;
+  }
 }/*# sourceMappingURL=bloqdetails.css.map */
