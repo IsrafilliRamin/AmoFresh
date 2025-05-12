@@ -303,10 +303,36 @@ main #amogrow-map .map-box img {
 main #amogrow-map .map-box .toggle-video {
   position: absolute;
   top: 8%;
-  right: 41%;
+  right: 40%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  padding: 40px 40px;
+  padding: 50px 50px;
+  background-color: rgba(5, 150, 246, 0);
+  color: white;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+main #amogrow-map .map-box .toggle-video1 {
+  position: absolute;
+  top: 40%;
+  right: 21%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  padding: 50px 50px;
+  background-color: rgba(5, 150, 246, 0);
+  color: white;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+main #amogrow-map .map-box .toggle-video2 {
+  position: absolute;
+  top: 86%;
+  right: 39%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  padding: 50px 50px;
   background-color: rgba(5, 150, 246, 0);
   color: white;
   border: none;
@@ -318,8 +344,9 @@ main #amogrow-map .map-box .container {
   top: 8.2%;
   right: 39.7%;
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
+  opacity: 0;
 }
 main #amogrow-map .map-box .container .dot {
   width: 10px;
@@ -331,6 +358,8 @@ main #amogrow-map .map-box .container .dot {
   left: 50%;
   transform: translate(-50%, -50%);
   animation: dotPulse 2s infinite ease-in-out;
+  opacity: 0;
+  cursor: pointer;
 }
 main #amogrow-map .map-box .container .halo {
   width: 10px;
@@ -342,6 +371,8 @@ main #amogrow-map .map-box .container .halo {
   left: 50%;
   transform: translate(-50%, -50%);
   animation: haloExpand 2s infinite ease-in-out;
+  opacity: 0;
+  cursor: pointer;
 }
 @keyframes dotPulse {
   0% {
@@ -759,8 +790,8 @@ footer .container-footer .container-footer-bottom {
     margin-bottom: 47px;
   }
   main #amogrow-map .close {
-    right: 30px;
-    top: 30px;
+    right: 15px;
+    top: 15px;
   }
 }
 @media (max-width: 650px) {
@@ -818,7 +849,8 @@ footer .container-footer .container-footer-bottom {
   main #amogrow-map .map-box .toggle-video {
     position: absolute;
     top: 10%;
-    right: 28%;
+    right: 23%;
+    padding: 40px 40px;
   }
   main #amogrow-map .map-box .container {
     position: absolute;
@@ -829,5 +861,14 @@ footer .container-footer .container-footer-bottom {
     display: flex;
     flex-direction: column;
     font-size: 17px;
+  }
+  main #amogrow-map .map-box .toggle-video2 {
+    position: absolute;
+    top: 86%;
+    right: 18%;
+  }
+  main #amogrow-map .map-box .toggle-video1 {
+    right: 4%;
+    padding: 40px 40px;
   }
 }/*# sourceMappingURL=amogrow.css.map */

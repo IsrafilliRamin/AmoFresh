@@ -161,6 +161,8 @@
             <div class="map-box" style="position: relative;">
                 <img src="../images/companies/Group 1832.svg" alt="map" style="width: 100%;">
                 <button class="toggle-video"></button>
+                <button class="toggle-video1"></button>
+                <button class="toggle-video2"></button>
                 <div class="container">
                     <div class="dot"></div>
                     <div class="halo"></div>
@@ -169,7 +171,7 @@
             <span class="close">X</span>
             <div class="open-video">
          
-                <div class="container-text-video">
+                <div style="display: none;" class="container-text-video">
                   <div class="text">
                     <h4>Nothern region</h4>
                     <div>Gusar / Khachmaz 500 h</div>
@@ -178,6 +180,28 @@
                   </div>
                   <div class="video">
                     <iframe  src="https://www.youtube.com/embed/UtBDMilukBA?si=3obnFgyHwBuHaF36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div style="display: none;" class="container-text-video video2">
+                  <div class="text">
+                    <h4>Absheron region</h4>
+                    <div>Zira / 12 h</div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                  </div>
+                  <div class="video">
+                    <iframe  src="https://www.youtube.com/embed/zbateiJ8WrY?si=duQdRuH9QZ1THrhv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div style="display: none;" class="container-text-video video3">
+                  <div class="text">
+                    <h4>Southern region</h4>
+                    <div>Lankaran / Astara 220 ha / 50 ha</div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                  </div>
+                  <div class="video">
+                    <iframe  src="https://www.youtube.com/embed/e1DAzvPig9A?si=fVOuczNAW2kW3oZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   </div>
                 </div>
             </div>
@@ -301,9 +325,13 @@
 
     <script>
         const btn = document.querySelector('.toggle-video');
+        const btn1 = document.querySelector('.toggle-video1');
+        const btn2 = document.querySelector('.toggle-video2');
         const videoBox = document.querySelector('.open-video');
         const closex = document.querySelector('.close');
         const containervideo = document.querySelector('.container-text-video');
+        const containervideo1 = document.querySelector('.video2');
+        const containervideo2 = document.querySelector('.video3');
 
         btn.addEventListener('click', () => {
             videoBox.classList.toggle('active');
@@ -314,8 +342,21 @@
             videoBox.classList.toggle('active');
             containervideo.style.display = "none";
             closex.classList.remove('active');
+             containervideo1.style.display = "none";
+             containervideo2.style.display = "none";
             
         });
+        btn1.addEventListener('click', () => {
+            videoBox.classList.toggle('active');
+            closex.classList.remove('active');
+            containervideo1.style.display = "flex"
+        });
+        btn2.addEventListener('click', () => {
+            videoBox.classList.toggle('active');
+            closex.classList.remove('active');
+            containervideo2.style.display = "flex"
+        });
+       
     </script>
 
 
