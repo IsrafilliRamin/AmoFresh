@@ -185,7 +185,8 @@
                         </p>
                     </div>
                     <div class="video">
-                        <iframe id="video1" src="https://www.youtube.com/embed/UtBDMilukBA?si=3obnFgyHwBuHaF36&enablejsapi=1"
+                        <iframe id="video1"
+                            src="https://www.youtube.com/embed/UtBDMilukBA?si=3obnFgyHwBuHaF36&enablejsapi=1"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -205,7 +206,8 @@
                         </p>
                     </div>
                     <div class="video">
-                        <iframe id="video2" src="https://www.youtube.com/embed/zbateiJ8WrY?si=duQdRuH9QZ1THrhv&enablejsapi=1"
+                        <iframe id="video2"
+                            src="https://www.youtube.com/embed/zbateiJ8WrY?si=duQdRuH9QZ1THrhv&enablejsapi=1"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -225,7 +227,8 @@
                         </p>
                     </div>
                     <div class="video">
-                        <iframe id="video3" src="https://www.youtube.com/embed/e1DAzvPig9A?si=fVOuczNAW2kW3oZF&enablejsapi=1"
+                        <iframe id="video3"
+                            src="https://www.youtube.com/embed/e1DAzvPig9A?si=fVOuczNAW2kW3oZF&enablejsapi=1"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -375,6 +378,7 @@
         btn.addEventListener('click', () => {
             videoBox.classList.add('active');
             containervideo.style.display = "flex";
+            closex.style.display = "flex";
             activeVideoId = 'video1';
         });
 
@@ -382,18 +386,21 @@
             videoBox.classList.add('active');
             containervideo1.style.display = "flex";
             activeVideoId = 'video2';
+            closex.style.display = "flex";
         });
 
         btn2.addEventListener('click', () => {
             videoBox.classList.add('active');
             containervideo2.style.display = "flex";
             activeVideoId = 'video3';
+            closex.style.display = "flex";
         });
         closex.addEventListener('click', () => {
             videoBox.classList.remove('active');
             containervideo.style.display = "none";
             containervideo1.style.display = "none";
             containervideo2.style.display = "none";
+            closex.style.display = "none";
 
             if (activeVideoId && players[activeVideoId]) {
                 players[activeVideoId].stopVideo();
