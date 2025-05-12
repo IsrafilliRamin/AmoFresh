@@ -846,9 +846,22 @@ footer .container-footer .container-footer-bottom {
   }
   main #slider .slider-box .swiper-pagination {
     position: relative;
-    top: 6px;
+    top: 3px;
   }
   main {
     margin-bottom: 0px !important;
+  }
+  main #main-amo .tree-box b {
+    font-size: 24px;
+    font-weight: 500;
+    color: #616161;
+  }
+  main #main-amo .tree-box {
+    color: #616161;
+  }
+  main #main-amo .tree-box .tree-text .advvan-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
   }
 }/*# sourceMappingURL=amo.css.map */
